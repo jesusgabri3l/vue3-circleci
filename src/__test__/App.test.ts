@@ -14,7 +14,7 @@ beforeEach(() => {
     }),
   });
 });
-it('increments value on click', async () => {
+it('increments value', async () => {
   const counterStore = useCounterStore();
   expect(
     screen.getByText('Vue3 + TS + Pinia + ESLint + Prettier + Vitest + @testing-library'),
@@ -22,4 +22,7 @@ it('increments value on click', async () => {
   expect(counterStore.count).toBe(2);
   counterStore.increment();
   expect(counterStore.count).toBe(3);
+});
+it('Should check if double is actually right', () => {
+  expect(screen.getByTestId('double')).toHaveTextContent('4');
 });
