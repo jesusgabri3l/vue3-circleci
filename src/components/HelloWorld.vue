@@ -21,6 +21,6 @@ const countHandler = (e: MouseEvent): MouseEvent => {
 
   <div class="card">
     <button type="button" @click="countHandler">count is {{ counterStore.count }}</button>
-    <p>Double is : {{ counterStore.doubleCount }}</p>
+    <p data-testid="double">Double is : {{ counterStore.doubleCount }}</p>
   </div>
 </template>
