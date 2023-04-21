@@ -24,5 +24,5 @@ it('increments value', async () => {
   expect(counterStore.count).toBe(3);
 });
 it('Should check if double is actually right', () => {
-  expect(screen.getByTestId('double')).toHaveText('4');
+  expect(screen.getByTestId('double')).toHaveTextContent('4');
 });
