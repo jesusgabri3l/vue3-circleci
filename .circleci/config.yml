@@ -18,7 +18,7 @@ jobs:
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
-          from: build
+          from: dist
           to: 's3://uninorte-jesusgabri3l'
 workflows:
   test_build_deploy:
