@@ -21,4 +21,11 @@ h1 {
   font-size: 32px;
   font-weight: 700;
 }
+button {
+  background-color: #2c3e50;
+  padding: 10px 24px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
 </styles>
